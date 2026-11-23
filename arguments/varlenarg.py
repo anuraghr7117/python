@@ -1,11 +1,9 @@
-def addition(*numbers):
+def addition(*args):
     total = 0
-
-    for num in numbers:
+    for num in args:
         total += num
-
     return total
 
-print(addition(10, 20))
-print(addition(10, 20, 30))
-print(addition(24, 76, 320, 970, 50))
+addition(1, 2, 3, 4, 5) 
+addition(10, 20)
+addition(5, 10, 15, 20, 25, 30)
